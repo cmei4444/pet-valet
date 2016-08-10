@@ -6,5 +6,5 @@
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back.",
 	"RIPPERONI": "Well rip to you too.",
-	"REQUEST": "Do you want to request a dog walker?"
+	"REQUEST": "Do you want to request a dog walker?\n %[Yes](reply:Yes)%[No](reply:No)"
 }
