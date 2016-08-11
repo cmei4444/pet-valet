@@ -14,14 +14,23 @@
         height: 100%;
       }
     </style>
+	<link rel="stylesheet" type="text/css" href="button-styles.css">
 	<script src="https://cdn.smooch.io/smooch.min.js"></script>
     <script>
-        Smooch.init({appToken: "2ck6ede8pdtgepxnb9vupg4km" });
+        Smooch.init ({
+			appToken: "2ck6ede8pdtgepxnb9vupg4km",
+			//embedded: true, 
+			customText: {
+				headerText: 'Request a Walk',
+			//	inputPlaceholder: 'Type a message...',
+			//	sendButtonText: 'Send',
+			}
+		});
     </script>
   </head>
   <body>
     <div id="map"></div>
-	<p id="coord">IDK</p>
+	<p id="coord" onlclick="Smooch.render()" height=600>CLICK THIS</p>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
