@@ -1,10 +1,8 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)",
-    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
-    "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back.",
+    "HELLO": "Hello!\nWelcome to Pet Valet.\nYou're talking to Pet Valet's chatbot. Type 'request' to request a dog walker, or 'learn more' to learn more about Pet Valet.",
+    "LEARN MORE": "Pet Valet is a dog walking service. You can pay to have your dog walked, or make money as a dog walker! Type 'request' to request a dog walker."
+	"CONNECT ME": "",
+    "DISCONNECT": "Roger that, the chatbot is back.",
 	"RIPPERONI": "Well rip to you too.",
-	"REQUEST": "Do you want to request a dog walker?\n %[Yes](reply:Yes)%[No](reply:No)"
+	"REQUEST": "Do you want to request a dog walker?\n %[Yes](reply:Yes)\n %[No](reply:No)"
 }
