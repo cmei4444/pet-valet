@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCpOX2vURUbL9meO-zRO_L4S2GNtW5y_wE",
+    authDomain: "pet-valet.firebaseapp.com",
+    databaseURL: "https://pet-valet.firebaseio.com",
+    storageBucket: "pet-valet.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+		</script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+		<style>
+			html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			}
+			#map {
+			height: 100%;
+			}
+		</style>
+			<link rel="stylesheet" type="text/css" href="button-styles.css">
+
+		<script src="https://cdn.smooch.io/smooch.min.js"></script>
+		<script>
+			Smooch.init ({
+				appToken: "2ck6ede8pdtgepxnb9vupg4km",
+				//embedded: true, 
+				customText: {
+					headerText: 'Request a Walk',
+				//	inputPlaceholder: 'Type a message...',
+				//	sendButtonText: 'Send',
+				}
+			});
+		</script>	
+		<title>Pet Valet</title>
+	</head>
+	<body>
+		<div class="container-flexible">
+			<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="valet.html">Pet Valet</a>
+    			</div>
+				<ul class="nav navbar-nav">
+					
+					<li><a href="sign.html">Sign in</a></li>
+					<li><a href="call.html">Call Walk</a></li>
+					<li><a href="settings.html">Settings</a></li>
+				</ul>
+			</div>
+			</nav>
+			</div>
+		<div id="map"></div>
+		<p id="coord">IDK</p>
+		
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 16
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.watchPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found. <br>Latitude: ' + position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
+            map.setCenter(pos);
+			
+	
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+	
+
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf_lavsia5-gqNNRYrZEG8icLNs58o4Qg&callback=initMap">
+    </script>
+		
+
+</body>
+</html>
