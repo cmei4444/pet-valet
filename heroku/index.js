@@ -31,7 +31,7 @@ class BetterSmoochApiBot extends SmoochApiBot {
     }
 }
 
-const name = 'SmoochBot';
+const name = 'PetValet Bot';
 const avatarUrl = 'https://s.gravatar.com/avatar/f91b04087e0125153623a3778e819c0a?s=80';
 const store = new SmoochApiStore({
     jwt
@@ -116,7 +116,7 @@ app.post('/webhook', function(req, res, next) {
     stateMachine.receiveMessage(msg)
         .then(() => res.end())
         .catch((err) => {
-            console.error('SmoochBot error:', err);
+            console.error('PetValet Bot error:', err);
             console.error(err.stack);
             res.end();
         });
