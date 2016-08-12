@@ -4,12 +4,9 @@
 	
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-=======
 		<link rel="stylesheet" href="bootstrap.min.css">
->>>>>>> refs/remotes/cmei4444/carolyn
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
 		<script src="bootstrap.min.js">
@@ -22,24 +19,31 @@
 			<nav class="navbar navbar-default">
   			<div class="container-fluid">
     			<div class="navbar-header">
-      				<a class="navbar-brand" href="valet.html">Pet Valet</a>
-					<a class="navbar-brand" href="valet.html"><img src ="dog.png" height="30px" width="40px"></a>
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">Pet Valet</a>
+					<a class="navbar-brand" href="index.html"><img src ="dog.png" height="30px" width="40px"></a>
     			</div>
-				<ul class="nav navbar-nav">
-					
-					<li class="active"><a href="sign.html">Sign in</a></li>
-					<li><a href="call.html">Call Walk</a></li>
-					<li><a href="settings.html">Settings</a></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="sign.html">Sign in</a></li>
+						<li><a href="call.html">Call Walk</a></li>
+						<li><a href="settings.html">Settings</a></li>
+					</ul>
+				</div>
 			</div>
 			</nav>
-			</div>
+			
 		<div class="walker text-center">
 			
 		<a href="walkerin.html " style= "margin: 10px 10px 10px 10px;"class="btn btn-primary" id="dw" role="button">Dog Walker</a>
 		</div>
 		<div class="owner text-center">
 		<a href="ownerin.html" class="btn btn-primary" id="do" role="button">Dog Owner</a>
+		</div>
 		</div>
 	</body>
 </html>
