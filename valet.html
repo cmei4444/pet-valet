@@ -47,6 +47,7 @@
 			Smooch.init ({
 				appToken: "2ck6ede8pdtgepxnb9vupg4km",
 				//embedded: true, 
+				givenName: "meowmeow",
 				customText: {
 					headerText: 'Request a Walk',
 				//	inputPlaceholder: 'Type a message...',
@@ -85,8 +86,8 @@
 
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 16
+			center: {lat: 41.8856, lng: -87.6214},
+			zoom: 12
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -101,6 +102,7 @@
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found. <br>Latitude: ' + position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
             map.setCenter(pos);
+			map.setZoom(17);
 			
 	
           }, function() {
