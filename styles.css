@@ -1,5 +1,5 @@
 .navbar-default{
-	color: #b3d9ff;
+	color: #ffffff;
     background-color: #4dd2ff;
 	}
 .navbar-brand {
@@ -10,13 +10,24 @@
 	font-weight: 500;
 	line-height: 26.4px;
 }
+
+.navbar-default .navbar-header a {
+	color: #ffffff;
+	vertical-align:text-bottom;
+}
+
+.nav.navbar-nav li a {
+	color: #ffffff;
+	vertical-align:bottom;
+}
+
 .navbar-nav {
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 	font-size: 18px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 26.4px;		
+	line-height: 26.4px;
 }
 
 .g-signin2 {
