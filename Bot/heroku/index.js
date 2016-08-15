@@ -32,7 +32,7 @@ class BetterSmoochApiBot extends SmoochApiBot {
 }
 
 const name = 'PetValet Bot';
-const avatarUrl = 'https://s.gravatar.com/avatar/f91b04087e0125153623a3778e819c0a?s=80';
+const avatarUrl = 'dog_chat_icon.png';
 const store = new SmoochApiStore({
     jwt
 });
