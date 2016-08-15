@@ -11,6 +11,8 @@
 		</script>
 		<script src="bootstrap.min.js">
 		</script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="188982285964-iu1pbiabealvlaprlt0vbssufh5922pe.apps.googleusercontent.com"> 
 		<title>Pet Valet</title>
 
 	</head>
@@ -39,7 +41,9 @@
 			
 		<div class="walker text-center">
 			
-		<a href="walkerin.html " style= "margin: 10px 10px 10px 10px;"class="btn btn-primary" id="dw" role="button">Dog Walker</a>
+		<a href="walkerin.html" style= "margin: 10px 10px 10px 10px;" class="btn btn-primary" id="dw" role="button">Dog Walker</a>
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 		</div>
 		<div class="owner text-center">
 		<a href="ownerin.html" class="btn btn-primary" id="do" role="button">Dog Owner</a>
