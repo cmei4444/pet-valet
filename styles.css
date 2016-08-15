@@ -30,6 +30,11 @@
 	line-height: 26.4px;
 }
 
+.about {
+	background-color:#4dd2ff;
+	font:italic bold 12px/30px Georgia, serif;
+}
+
 .g-signin2 {
 	text-align: center; 
 	width: 120px;
