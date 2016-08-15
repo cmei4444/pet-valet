@@ -20,13 +20,26 @@
 	line-height: 26.4px;	
 	color: FFF;
 }
+<<<<<<< HEAD
 .about {
 	background-color:#4dd2ff;
 	font:italic bold 12px/30px Georgia, serif;
 	
+=======
+
+>>>>>>> refs/remotes/origin/gh-pages
 
 .g-signin2 {
 	text-align: center; 
 	width: 120px;
 	margin: 0px auto 10px auto;
+<<<<<<< HEAD
+=======
+
+.about {
+	background-color:#4dd2ff;
+	font:italic bold 12px/30px Georgia, serif;
+	
+
+>>>>>>> refs/remotes/origin/gh-pages
 }
