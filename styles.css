@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 .navbar-default{
 	color: #ffffff;
-    background-color: #4dd2ff;
-	}
+    	background-color: #4dd2ff;
+}
 .navbar-brand {
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 	font-size: 24px;
@@ -41,7 +40,7 @@
 	width: 120px;
 	margin: 0px auto 10px auto;
 }
-=======
+
 .navbar-default{
 	color: #ffffff;
 	background-color: #4dd2ff;
@@ -85,4 +84,3 @@
 	width: 120px;
 	margin: 0px auto 10px auto;
 }
->>>>>>> afcbb82379807c1fcc356340e8cf0846c965d06a
