@@ -9,6 +9,7 @@
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+	color: #FFF;
 }
 .navbar-nav {
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
@@ -16,11 +17,19 @@
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 26.4px;		
+	line-height: 26.4px;	
+	color: FFF;
 }
+<<<<<<< HEAD
 
 .g-signin2 {
 	text-align: center; 
 	width: 120px;
 	margin: 0px auto 10px auto;
+=======
+.about {
+	background-color:#4dd2ff;
+	font:italic bold 12px/30px Georgia, serif;
+	
+>>>>>>> refs/remotes/origin/master
 }
