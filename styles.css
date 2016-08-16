@@ -31,12 +31,11 @@ html, body {
 }
 
 a:hover {
-	color: red;
 	text-shadow: 1px 1px #007399;
 }
 
 .navbar-brand {
-	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 28px;
 	font-style: normal;
 	font-variant: normal;
@@ -58,6 +57,7 @@ a:hover {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
 	
 }
 
@@ -130,14 +130,16 @@ a:hover {
 	border-radius: 10px;
 	opacity: 0.9;
 	background-color: #4dd2ff;
-	font:bold 12px/30px Georgia, serif;
+	font:bold 12px/30px;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 	padding: 25px;
 }
 
 .btn {
-	background-color:#4dd2ff
-	
+	background-color:#4dd2ff;
+	color: white;
+	border:1px solid black;
 }
 
 #call-form {
@@ -145,8 +147,12 @@ a:hover {
 	width: 90%;
 	margin: 2% auto;
 	padding-top: 2%;
+	font-family: 'Roboto', sans-serif;
 }
 
 #call-form > h2 {
 	text-align: center;
 }
+
+
+
