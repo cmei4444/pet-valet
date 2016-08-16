@@ -32,7 +32,7 @@ class BetterSmoochApiBot extends SmoochApiBot {
 }
 
 const name = 'PetValet Bot';
-const avatarUrl = 'heroku/dog_chat_icon.png';
+const avatarUrl = 'dog_chat_icon.png';
 const store = new SmoochApiStore({
     jwt
 });

@@ -1,13 +1,14 @@
 {
     "HELLO": "Hi! We hope you're having a good experience using Pet Valet.",
-    "LEARN MORE": "Pet Valet is a dog walking service. You can pay to have your dog walked, or make money as a dog walker! Type 'request' to request a dog walker.",
+    "LEARN MORE": "Pet Valet is a dog walking service. You can pay to have your dog walked, or make money as a dog walker! For more information about the website or its creators, head to the 'About Pet Valet' tab.",
 	"CONNECT ME": "",
     "DISCONNECT": "Roger that, the chatbot is back.",
 	"RIPPERONI": "Well rip to you too.",
-	"REQUEST": "Do you want to request a dog walker? %[Yes](https://cmei4444.github.io/Bot/pet-valet/call.html) %[No](reply:No)",
+	"REQUEST": "Do you want to request a dog walker? %[Yes](https://cmei4444.github.io/pet-valet/Bot/call.html) %[No](reply:No)",
 	"HELP": "Please email customer services at petvalet.service@gmail.com",
-	"WALK": "So you want to become a dog walker? Thanks for your interest in joining the Pet Valet family! Head over to the Sign In tab to create an account and start walking dogs now!",
+	"WALK": "So you want to become a dog walker? Thanks for your interest in joining the Pet Valet family! Head over to the Sign In tab to create an account as a dog walker and start walking dogs now!",
 	"IDK": "You might not know what to do, but we do! Head over to the Sign In page and help caring for pets now!",
-	"CUTE": "Pet Valet is cute! Send your pet over to us for walking now for even more cuteness!",
+	"CUTE": "Pet Valet is cute! Send your pet over to us for walking for even more cuteness!",
+	"RESPONSES": "Here are a list of keywords to help you use Pet Valet: 'request' lets you request a dog walker. 'learn more' gives you more information about the Pet Valet website. 'walk' gives you more information about being a dog walker. 'help' gives you our customer services email. There are also some other surprise keywords, see if you can find them!",
 	"KEVIN": "Copy and Paste"
 }
