@@ -1,3 +1,11 @@
+html, body {
+	height: 100%;
+}
+
+#map {
+	height: 86%;
+}
+
 .navbar-default{
 	color: #ffffff;
     background-color: #4dd2ff;
@@ -23,7 +31,6 @@ a:hover {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 40px;
-	color: #FFF;
 }
 
 .navbar-default .navbar-header a {
@@ -32,7 +39,6 @@ a:hover {
 
 .nav.navbar-nav li a {
 	color: #ffffff;
-	vertical-align: bottom;
 }
 
 .navbar-nav {
