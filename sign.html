@@ -15,7 +15,7 @@
 		<meta name="google-signin-client_id" content="188982285964-iu1pbiabealvlaprlt0vbssufh5922pe.apps.googleusercontent.com"> 
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 		<script>
-		function tester() {
+		function sign_tester() {
 			if GoogleAuth.isSignedIn.get() {
 				var x = document.getElementById("sign-in-test");
 				x.innerHTML = "signed in";
@@ -59,7 +59,7 @@
 				<a href="walkerin.html" style= "margin: 10px;" class="btn btn-primary" id="dw" role="button">Dog Walker</a>
 				<br>
 				<div class="g-signin2" data-onsuccess="onSignIn"></div>
-				<p id="sign-in-test" onclick="tester()">Not signed in</p>
+				<p id="sign-in-test" onclick="sign_tester()">Not signed in</p>
 			</div>
 		
 			<div class="owner text-center">
