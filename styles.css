@@ -1,7 +1,8 @@
 .navbar-default{
-	color: #b3d9ff;
-    background-color: #4dd2ff;
-	}
+	color: #ffffff;
+	background-color: #4dd2ff;
+}
+
 .navbar-brand {
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 	font-size: 24px;
@@ -10,11 +11,90 @@
 	font-weight: 500;
 	line-height: 26.4px;
 }
+
+.navbar-default .navbar-header a {
+	color: #ffffff;
+	vertical-align:text-bottom;
+}
+
+.nav.navbar-nav li a {
+	color: #ffffff;
+	vertical-align:bottom;
+}
+
 .navbar-nav {
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 	font-size: 18px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 26.4px;		
+	line-height: 26.4px;
 }
+
+.about {
+	background-color:#4dd2ff;
+	font:italic bold 12px/30px Georgia, serif;
+}
+
+.g-signin2 {
+	text-align: center; 
+	width: 120px;
+	margin: 0px auto 10px auto;
+}
+@media screen and (max-width: 500px) {
+    .hed {
+        font-size:22px;
+    }
+}
+ 
+@media screen and (max-width: 750px) {
+    .hed {
+        font-size:24px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .hed {
+        font-size:28px;
+    }
+}
+ 
+@media screen and (max-width: 1250px) {
+    .hed {
+        font-size:30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bod {
+        font-size:14px;
+    }
+}
+ 
+@media screen and (max-width: 750px) {
+    .bod {
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bod {
+        font-size:18px;
+    }
+}
+ 
+@media screen and (max-width: 1250px) {
+    .bod {
+        font-size:20px;
+    }
+}
+
+#about-box {
+	border-radius: 10px;
+	
+}
+
+.btn {
+	background-color:#4dd2ff
+	
+}
+
+
+

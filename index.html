@@ -3,12 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
 		<link rel="stylesheet" href="bootstrap.min.css">
-		
-		<!--
 		<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-		
 		<script>
 		  // Initialize Firebase
 		  var config = {
@@ -19,24 +15,29 @@
 		  };
 		  firebase.initializeApp(config);
 		</script>
-		
-		-->
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="bootstrap.min.js"></script>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+		</script>
+		<script src="bootstrap.min.js">
+		</script>
 		<style>
-		html, body {
+			html, body {
 			height: 100%;
 			margin: 0;
 			padding: 0;
-		}
-		#map {
-			height: 100%;
-		}
+			}
+			#map {
+			height: 84%;
+			}
+			.navbar-default{
+	
+  
 		</style>
 		
-		<link rel="stylesheet" type="text/css" href="styles.css">
+
+			<link rel="stylesheet" type="text/css" href="button-styles.css">
+			<link rel="stylesheet" type="text/css" href="styles.css">
+
+
 		<link rel="stylesheet" type="text/css" href="button-styles.css">
 
 		<script src="https://cdn.smooch.io/smooch.min.js"></script>
@@ -44,7 +45,7 @@
 			Smooch.init ({
 				appToken: "2ck6ede8pdtgepxnb9vupg4km",
 				//embedded: true, 
-				//givenName: "meowmeow",
+				givenName: "meowmeow",
 				customText: {
 					headerText: 'Request a Walk',
 				//	inputPlaceholder: 'Type a message...',
@@ -52,83 +53,79 @@
 				}
 			});
 		</script>	
-		
 		<title>Pet Valet</title>
 	</head>
 	<body>
 		<div class="container-flexible">
 			<nav class="navbar navbar-default">
-	  			<div class="container-fluid">
-	    			<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>                        
-						</button>
-	      				<a class="navbar-brand" href="index.html">Pet Valet</a>
-						<a class="navbar-brand" href="index.html"><img src ="dog.png" height="30px" width="40px"></a>
-	    			</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li><a href="sign.html">Sign in</a></li>
-							<li><a href="call.html">Call Walk</a></li>
-							<li><a href="settings.html">Settings</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-			
-			<div id="map"></div>
-		
-			<script>
-			  // Note: This example requires that you consent to location sharing when
-			  // prompted by your browser. If you see the error "The Geolocation service
-			  // failed.", it means you probably did not give permission for the browser to
-			  // locate you.
-
-			  function initMap() {
-				var map = new google.maps.Map(document.getElementById('map'), {
-					center: {lat: 41.8856, lng: -87.6214},
-					zoom: 12
-				});
-				var infoWindow = new google.maps.InfoWindow({map: map});
-
-				// Try HTML5 geolocation.
-				if (navigator.geolocation) {
-				  navigator.geolocation.watchPosition(function(position) {
-					var pos = {
-					  lat: position.coords.latitude,
-					  lng: position.coords.longitude
-					};
-
-					infoWindow.setPosition(pos);
-					infoWindow.setContent('Location found. <br>Latitude: ' + position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
-					map.setCenter(pos);
-					map.setZoom(17);
+  			<div class="container-fluid">
+    			<div class="navbar-header">
 					
-			
-				  }, function() {
-					handleLocationError(true, infoWindow, map.getCenter());
-				  });
-				} else {
-				  // Browser doesn't support Geolocation
-				  handleLocationError(false, infoWindow, map.getCenter());
-				}
-			  }
+      				<a class="navbar-brand" href="valet.html">Pet Valet</a> 
+					<a class="navbar-brand" href="valet.html"><img src ="dog.png" height="30px" width="40px"></a>
+    			</div>
+				<ul class="nav navbar-nav">
+					<li><a href="settings.html">About Pet Valet</a></li> 
+					<li><a href="sign.html">Sign in</a></li>
+					<li><a href="call.html">Call Walk</a></li>
+					
+				</ul>
+			</div>
+			</nav>
+			</div>
+		<div id="map"></div>
+		<p id="coord">IDK</p>
+		
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
 
-			  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-				infoWindow.setPosition(pos);
-				infoWindow.setContent(browserHasGeolocation ?
-									  'Error: The Geolocation service failed.' :
-									  'Error: Your browser doesn\'t support geolocation.');
-			  }
-			</script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 41.8856, lng: -87.6214},
+			zoom: 12
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.watchPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found. <br>Latitude: ' + position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
+            map.setCenter(pos);
+			map.setZoom(17);
 			
-			<script async defer
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf_lavsia5-gqNNRYrZEG8icLNs58o4Qg&callback=initMap">
-			</script>
+	
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+	
+
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf_lavsia5-gqNNRYrZEG8icLNs58o4Qg&callback=initMap">
+    </script>
 		
-		
-	</body>
+
+</body>
 </html>
