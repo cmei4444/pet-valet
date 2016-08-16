@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<title>Pet Valet</title>
 	</head>
-	<body bgcolor="BLUE">
+	<body>
 		<div class="container-flexible">
 			<nav class="navbar navbar-default">
   			<div class="container-fluid">
@@ -46,48 +46,45 @@
 			<FORM METHOD="Get" ACTION="Profile.asp"> 
 
 
-
-		<div class="form-group">
-
+		<div id="call-form">
 			<div class="form-group">
 
-  			<label for="usr">Name:</label>
-  			<input type="text" class="form-control" id="usr">
-		</div>
-		<div class="form-group">
- 			 <label for="number">Phone Number:</label>
-  			<input type="number" class="form-control" id="number">
-		</div>
-		<div class="form-group">
- 			 <label for="location">Start Location :</label>
-  			<input type="location" class="form-control" id="location">
-		</div>
-		<div class="form-group">
- 			 <label for="end">End Location :</label>
-  			<input type="end" class="form-control" id="end">
-		</div>
-		<div class="form-group">
- 			 <label for="time">Start Time :</label>
-  			<input type="time" class="form-control" id="time">
-		</div>
-		<div class="form-group">
- 			 <label for="duration">Duration (minutes) :</label>
-  			<input type="duration" class="form-control" id="duration">
-		</div>
-		<script>
-			var cost = (duration/60) *15;
-		</script>
-		<div >
+				<div class="form-group">
+		  			<label for="usr">Name:</label>
+		  			<input type="text" class="form-control" id="usr">
+				</div>
+				<div class="form-group">
+		 			 <label for="number">Phone Number:</label>
+		  			<input type="number" class="form-control" id="number">
+				</div>
+				<div class="form-group">
+		 			 <label for="location">Start Location :</label>
+		  			<input type="location" class="form-control" id="location">
+				</div>
+				<div class="form-group">
+		 			 <label for="end">End Location :</label>
+		  			<input type="end" class="form-control" id="end">
+				</div>
+				<div class="form-group">
+		 			 <label for="time">Start Time :</label>
+		  			<input type="time" class="form-control" id="time">
+				</div>
+				<div class="form-group">
+		 			 <label for="duration">Duration (minutes) :</label>
+		  			<input type="duration" class="form-control" id="duration">
+				</div>
+			
+				<script>
+					var cost = (duration/60) *15;
+				</script>
 
+				<INPUT TYPE="Submit" VALUE="Enter"> 
+				</FORM> 
 		
-		
-		<INPUT TYPE="Submit" VALUE="Enter"> 
-		</FORM> 
-		
-
-		<p id= cost
-		function change() { var text = document.getElementbyId(aboutme");
-		aboutme.innerhtml ="}
+				<p id= cost
+				function change() { var text = document.getElementbyId(aboutme");
+				aboutme.innerhtml ="}
+			</div>
 		</div>
 
 	</body>

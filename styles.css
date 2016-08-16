@@ -13,6 +13,17 @@ html, body {
     margin-bottom: 0px;
 }
 
+@media (min-width: 767px) {
+	.navbar-header > a {
+		padding: 15px 15px 0px 15px;
+	}
+}
+
+.navbar-header > a {
+	padding: 0px 15px 0px 15px;
+
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	color: #ffffff;
 	text-shadow: 1px 1px #007399;
@@ -47,19 +58,13 @@ a:hover {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 40px;
+	
 }
 
 #nav-icon {
 	height: 40px;
 	width: 40px;
 	border: 1px solid #007399;
-}
-
-.about {
-	background-color:#4dd2ff;
-	font:bold 12px/30px Georgia, serif;
-	color: white;
 }
 
 .g-signin2 {
@@ -120,7 +125,11 @@ a:hover {
 
 #about-box {
 	border-radius: 10px;
-	
+	opacity: 0.9;
+	background-color: #4dd2ff;
+	font:bold 12px/30px Georgia, serif;
+	color: white;
+	padding: 25px;
 }
 
 .btn {
