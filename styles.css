@@ -124,6 +124,9 @@ a:hover {
 }
 
 #about-box {
+	width: 90%;
+	margin: 4% auto;
+	max-width: 900px;
 	border-radius: 10px;
 	opacity: 0.9;
 	background-color: #4dd2ff;
@@ -135,4 +138,15 @@ a:hover {
 .btn {
 	background-color:#4dd2ff
 	
+}
+
+#call-form {
+	max-width: 700px;
+	width: 90%;
+	margin: 2% auto;
+	padding-top: 2%;
+}
+
+#call-form > h2 {
+	text-align: center;
 }
