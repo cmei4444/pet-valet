@@ -13,15 +13,18 @@
 		<script src="bootstrap.min.js">
 		</script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 		<title>Pet Valet</title>
-	
 		<script>
-			function calc-cost () {
-				var cost = (duration/60) * 15;
-				var x = document.getElementById("calculated-cost");
-				x.innerHTML = cost.toString()
-			}
-		</script>
+				function calc_cost() {
+					var duration = document.getElementById("duration").value;
+					var cost = (duration/60) * 15;
+					var x = document.getElementById("calculated-cost");
+					x.innerHTML = cost.toString();
+				}
+			</script>
+
 	
 	</head>
 	<body>
@@ -52,14 +55,14 @@
 			
 			
 			
-			<FORM METHOD="Get" ACTION="Profile.asp"> 
+		
 
 
 		<div id="call-form">
+			<FORM METHOD="Get" ACTION="Profile.asp"> 
 			<h2>
 				Call a Dog Walker
 			</h2>
-			<div class="form-group">
 
 				<div class="form-group">
 		  			<label for="usr">Name:</label>
@@ -85,22 +88,20 @@
 		 			 <label for="duration">Duration (minutes) :</label>
 		  			<input type="duration" class="form-control" id="duration">
 				</div>
-				<div>
-					<button class="btn btn-primary" role="button" onclick="calc-cost()" style= "margin: 10px 0px;" >
-						Calculate cost:
-					</button>
-					<div id="calculated-cost">
-						No cost calculated yet
-					</div>
-				</div>
-
-				<INPUT TYPE="Submit" VALUE="Enter"> 
-				</FORM> 
+				
+				<button type="submit" class="btn btn-default">Submit</button>
+				
+		</FORM>
 		
-				<p id= cost
-				function change() { var text = document.getElementbyId(aboutme");
-				aboutme.innerhtml ="}
-			</div>
+		<div>
+			<button class="btn btn-primary" role="button" onclick="calc_cost()" style= "margin: 10px 0px;" >
+				Calculate cost:
+			</button>
+			
+			<!--<div id="calculated-cost">-->
+				<p id="calculated-cost">No cost calculated yet</p>
+			<!--</div>-->
+		</div>
 		</div>
 
 	</body>
