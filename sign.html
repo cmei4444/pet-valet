@@ -16,7 +16,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 		<script>
 		function sign_tester() {
-			if GoogleAuth.isSignedIn.get() {
+			if (GoogleAuth.isSignedIn.get()) {
 				var x = document.getElementById("sign-in-test");
 				x.innerHTML = "signed in";
 			}
