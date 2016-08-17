@@ -8,6 +8,20 @@
 
 		<link rel="stylesheet" href="bootstrap.min.css">
 
+		<script src="https://cdn.smooch.io/smooch.min.js"></script>
+		<script>
+			Smooch.init ({
+				appToken: "2ck6ede8pdtgepxnb9vupg4km",
+				//embedded: true, 
+				givenName: "meowmeow",
+				customText: {
+					headerText: 'Talk to our chatbot!',
+				//	inputPlaceholder: 'Type a message...',
+				//	sendButtonText: 'Send',
+				}
+			});
+		</script>		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
 		<script src="bootstrap.min.js">
@@ -106,7 +120,11 @@
 				<span id="calculated-cost" style= "padding-left: 10px">No cost calculated yet</span>
 			<!--</div>-->
 		</div>
-				<button type="submit" class="btn btn-default" style="width:100%;">Submit</button>
+				
+				<!--This is currently not a working submit button! To make it work, remove the link and change the type to 'submit'.-->
+				<a href="form_submit.html"> 
+					<button type="button" class="btn btn-default" style="width:100%;">Submit</button>
+				</a>
 				
 		</FORM>
 		

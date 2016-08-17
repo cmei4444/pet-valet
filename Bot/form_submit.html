@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
 		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
@@ -28,21 +30,8 @@
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<meta name="google-signin-client_id" content="188982285964-iu1pbiabealvlaprlt0vbssufh5922pe.apps.googleusercontent.com"> 
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-		<script>
-		function sign_tester() {
-			if (GoogleAuth.isSignedIn.get()) {
-				var x = document.getElementById("sign-in-test");
-				x.innerHTML = "signed in";
-			}
-		}
-		
-		
-		</script>
-	
-		
 		<title>Pet Valet</title>
 		
-
 	</head>
 	<body background="dog.png">
 		<div class="container-flexible">
@@ -60,9 +49,8 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li> 
-						<li><a href="settings.html">About Pet Valet</a></li>
-						
-						<li><a href="call.html">Call Walk</a></li>
+						<li><a href="settings.html">About Pet Valet</a></li>						
+						<li ><a href="call.html">Call Walk</a></li>
 
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -78,19 +66,17 @@
 				</div>
 			</div>
 			</nav>
-			
-			<div class="walker text-center">
-				<a href="walkerin.html" style= "margin: 10px;" class="btn btn-primary" id="dw" role="button">Dog Walker</a>
-				<br>
-				<div class="g-signin2" data-onsuccess="onSignIn"></div>
-				<p id="sign-in-test" onclick="sign_tester()">Not signed in</p>
-			</div>
 		
-			<div class="owner text-center">
-				<a href="ownerin.html" class="btn btn-primary" id="do" role="button">Dog Owner</a>
-			</div>
+		<div class="ownerin centered-section">
+			<h2 style="padding:10px;"> Sorry, there's nothing here! The feature or page you are trying to access doesn't exist yet, but don't worry, we're still adding more! </h2>
+		
+		<!--
+		<a href="ownergooglein.html" style= "margin: 10px 10px 10px 10px;"class="btn btn-primary" id="dw" role="button">Sign in with Google</a>
+		</div>
+		<div class="ownerup text-center">
+		<a href="ownergoogleup.html" class="btn btn-primary" id="do" role="button">Sign up with Google</a>
+		</div>	
+		-->
 		</div>
 	</body>
 </html>
-
-

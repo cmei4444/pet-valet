@@ -10,10 +10,20 @@
 
 		<link rel="stylesheet" href="bootstrap.min.css">
 
-		<link rel="stylesheet" href="bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-
-
+		<script src="https://cdn.smooch.io/smooch.min.js"></script>
+		<script>
+			Smooch.init ({
+				appToken: "2ck6ede8pdtgepxnb9vupg4km",
+				//embedded: true, 
+				givenName: "meowmeow",
+				customText: {
+					headerText: 'Talk to our chatbot!',
+				//	inputPlaceholder: 'Type a message...',
+				//	sendButtonText: 'Send',
+				}
+			});
+		</script>	
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
 		<script src="bootstrap.min.js">
@@ -57,7 +67,7 @@
 				</div>
 			</div>
 			</nav>
-		<div class="walkerin signin-section">
+		<div class="walkerin centered-section">
 			<h2 style="padding-bottom: 25px;">Dog Walker</h2>
 			<p> Sign in with Google here! </p>
 			<div class="g-signin2" data-onsuccess="onSignIn"></div>	
