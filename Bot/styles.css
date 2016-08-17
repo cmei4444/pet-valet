@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 #map {
@@ -35,11 +36,10 @@ a:hover {
 }
 
 .navbar-brand {
-	font-family: 'Roboto', sans-serif;
 	font-size: 28px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: bold;
+	font-weight: 700px !important;
 	line-height: 40px;
 }
 
@@ -55,7 +55,7 @@ a:hover {
 	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: bold;
+	font-weight: 700px !important;
 	font-family: 'Roboto', sans-serif;
 	
 }
