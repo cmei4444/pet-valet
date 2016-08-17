@@ -4,7 +4,7 @@
 	"CONNECT ME": "",
     "DISCONNECT": "Roger that, the chatbot is back.",
 	"RIPPERONI": "Well rip to you too.",
-	"REQUEST": "Do you want to request a dog walker? %[Yes](https://cmei4444.github.io/pet-valet/Bot/call.html) %[No](reply:No)",
+	"REQUEST": "Do you want to request a dog walker? %[Yes](reply:Yes) %[No](reply:No)",
 	"HELP": "Please email customer services at petvalet.service@gmail.com",
 	"WALK": "So you want to become a dog walker? Thanks for your interest in joining the Pet Valet family! Head over to the Sign In tab to create an account as a dog walker and start walking dogs now!",
 	"IDK": "You might not know what to do, but we do! Head over to the Sign In page and help caring for pets now!",
