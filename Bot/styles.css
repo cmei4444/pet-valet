@@ -77,6 +77,8 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	color: #ffffff;
+	text-shadow: 1px 1px #007399;
 	background-color:  #0099cc;
 }
 
@@ -166,7 +168,7 @@ a:hover {
 	text-align: center;
 }
 
-.text-center {
+.signin-section {
 	width: 90%;
 	margin: 4% auto;
 	max-width: 900px;
@@ -177,4 +179,7 @@ a:hover {
 	color: white;
 	padding: 25px;
 	text-align: center;
+	font-size: 18px;
 }
+
+
