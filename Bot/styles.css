@@ -145,7 +145,6 @@ a:hover {
 	border-radius: 10px;
 	opacity: 0.9;
 	background-color: #4dd2ff;
-	font:bold 12px/30px;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	padding: 25px;
@@ -182,4 +181,7 @@ a:hover {
 	font-size: 18px;
 }
 
+h2 {
+	font-weight: bold;
+}
 
