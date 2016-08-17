@@ -21,7 +21,7 @@
 					var duration = document.getElementById("duration").value;
 					var cost = (duration/60) * 15;
 					var x = document.getElementById("calculated-cost");
-					x.innerHTML = "$" + cost.toString();
+					x.innerHTML = "$" + cost.toFixed(2);
 				}
 			</script>
 
@@ -88,20 +88,20 @@
 		 			 <label for="duration">Duration (minutes) :</label>
 		  			<input type="duration" class="form-control" id="duration">
 				</div>
-				
-				<button type="submit" class="btn btn-default">Submit</button>
-				
-		</FORM>
-		
-		<div>
-			<button class="btn btn-primary" role="button" onclick="calc_cost()" style= "margin: 10px 0px;" >
+				<div style="display: inline;">
+			<button class="btn btn-primary" type="button" onclick="calc_cost()" style= "margin: 10px 0px;" >
 				Calculate cost:
 			</button>
 			
 			<!--<div id="calculated-cost">-->
-				<p id="calculated-cost">No cost calculated yet</p>
+				<span id="calculated-cost" style= "padding-left: 10px">No cost calculated yet</span>
 			<!--</div>-->
 		</div>
+				<button type="submit" class="btn btn-default" style="width:100%;">Submit</button>
+				
+		</FORM>
+		
+		
 		</div>
 
 	</body>

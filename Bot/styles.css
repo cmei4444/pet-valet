@@ -39,7 +39,7 @@ a:hover {
 	font-size: 28px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: bold;
 	line-height: 40px;
 }
 
@@ -52,11 +52,10 @@ a:hover {
 }
 
 .navbar-nav {
-	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	
 }
@@ -145,8 +144,7 @@ a:hover {
 #call-form {
 	max-width: 700px;
 	width: 90%;
-	margin: 2% auto;
-	padding-top: 2%;
+	margin: 5% auto;
 	font-family: 'Roboto', sans-serif;
 }
 
