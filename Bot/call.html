@@ -9,18 +9,6 @@
 		<link rel="stylesheet" href="bootstrap.min.css">
 
 		<script src="https://cdn.smooch.io/smooch.min.js"></script>
-		<script>
-			Smooch.init ({
-				appToken: "2ck6ede8pdtgepxnb9vupg4km",
-				//embedded: true, 
-				givenName: "meowmeow",
-				customText: {
-					headerText: 'Talk to our chatbot!',
-				//	inputPlaceholder: 'Type a message...',
-				//	sendButtonText: 'Send',
-				}
-			});
-		</script>		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
@@ -28,17 +16,13 @@
 		</script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
+		<script src="script.js"></script>
+		<script>
+			Smooch.init(conditions);
+		</script>		
+		
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 		<title>Pet Valet</title>
-		<script>
-				function calc_cost() {
-					var duration = document.getElementById("duration").value;
-					var cost = (duration/60) * 15;
-					var x = document.getElementById("calculated-cost");
-					x.innerHTML = "$" + cost.toFixed(2);
-				}
-			</script>
-
 	
 	</head>
 	<body>
@@ -89,7 +73,7 @@
 
 				<div class="form-group">
 		  			<label for="usr">Name:</label>
-		  			<input type="text" class="form-control" id="usr">
+		  			<input type="text" class="form-control" id="usr" onkeypress="preventEnterSubmit(this)">
 				</div>
 				<div class="form-group">
 		 			<label for="phoneNumber">Phone Number:</label>
@@ -109,7 +93,7 @@
 				</div>
 				<div class="form-group">
 		 			 <label for="duration">Duration (minutes):</label>
-		  			<input type="duration" class="form-control" id="duration">
+		  			<input type="number" class="form-control" id="duration">
 				</div>
 				<div style="display: inline;">
 			<button class="btn btn-primary" type="button" onclick="calc_cost()" style= "margin: 10px 0px;" >

@@ -19,18 +19,6 @@
 		-->
 		
 		<script src="https://cdn.smooch.io/smooch.min.js"></script>
-		<script>
-			Smooch.init ({
-				appToken: "2ck6ede8pdtgepxnb9vupg4km",
-				//embedded: true, 
-				givenName: "meowmeow",
-				customText: {
-					headerText: 'Talk to our chatbot!',
-				//	inputPlaceholder: 'Type a message...',
-				//	sendButtonText: 'Send',
-				}
-			});
-		</script>	
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
@@ -38,7 +26,11 @@
 		</script>
 	
 		<link rel="stylesheet" type="text/css" href="styles.css">
-
+		
+		<script src="script.js"></script>
+		<script>
+			Smooch.init(conditions);
+		</script>	
 		
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 		<title>Pet Valet</title>

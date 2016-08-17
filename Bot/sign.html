@@ -8,18 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
 		<script src="https://cdn.smooch.io/smooch.min.js"></script>
-		<script>
-			Smooch.init ({
-				appToken: "2ck6ede8pdtgepxnb9vupg4km",
-				//embedded: true, 
-				givenName: "meowmeow",
-				customText: {
-					headerText: 'Talk to our chatbot!',
-				//	inputPlaceholder: 'Type a message...',
-				//	sendButtonText: 'Send',
-				}
-			});
-		</script>	
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
@@ -27,19 +15,14 @@
 		</script>
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<meta name="google-signin-client_id" content="188982285964-iu1pbiabealvlaprlt0vbssufh5922pe.apps.googleusercontent.com"> 
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		
+		<script src="script.js"></script>
 		<script>
-		function sign_tester() {
-			if (GoogleAuth.isSignedIn.get()) {
-				var x = document.getElementById("sign-in-test");
-				x.innerHTML = "signed in";
-			}
-		}
-		
-		
-		</script>
-	
-		
+			Smooch.init(conditions);
+		</script>	
+			
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+				
 		<title>Pet Valet</title>
 		
 
